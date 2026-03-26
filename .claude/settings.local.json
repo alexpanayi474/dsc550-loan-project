@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/**)",
+      "Read(//usr/local/**)",
+      "Read(//c/ProgramData/anaconda3/**)",
+      "Read(//c/Users/alexa/anaconda3/**)",
+      "Read(//c/Users/alexa/miniconda3/**)",
+      "Read(//c/Users/alexa/**)",
+      "Bash(/c/Users/alexa/anaconda3/python.exe -c \"\nimport json\nwith open\\(r'C:/Users/alexa/Documents/UCY files/Data Science/DSC 550/Group Project/starter_notebook.ipynb'\\) as f:\n    nb = json.load\\(f\\)\nprint\\('=== CELL 4 ==='\\)\nprint\\(''.join\\(nb['cells'][4]['source']\\)\\)\nprint\\(\\)\nprint\\('=== CELL 11 ==='\\)\nprint\\(''.join\\(nb['cells'][11]['source']\\)\\)\n\")",
+      "Bash(/c/Users/alexa/anaconda3/python.exe -c \"\nimport json\nwith open\\(r'C:/Users/alexa/Documents/UCY files/Data Science/DSC 550/Group Project/starter_notebook.ipynb'\\) as f:\n    nb = json.load\\(f\\)\nprint\\('Cell 4 id:', nb['cells'][4].get\\('id', 'NO ID'\\)\\)\nprint\\('Cell 11 id:', nb['cells'][11].get\\('id', 'NO ID'\\)\\)\n\")",
+      "Bash(/c/Users/alexa/anaconda3/python.exe -c \"\nimport json\nwith open\\(r'C:/Users/alexa/Documents/UCY files/Data Science/DSC 550/Group Project/starter_notebook.ipynb', encoding='utf-8'\\) as f:\n    nb = json.load\\(f\\)\nfor i in [28, 29, 30]:\n    print\\(f'=== CELL {i} ==='\\)\n    print\\(''.join\\(nb['cells'][i]['source']\\)[:300]\\)\n    print\\(\\)\n\")",
+      "Bash(git pull:*)",
+      "Bash(sed 's/\\\\\\\\n.*//')",
+      "WebFetch(domain:)",
+      "Bash(python -c \":*)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Bash(where py:*)",
+      "Bash(claude config:*)",
+      "Bash(cd:*)",
+      "Bash(python fix_encoding.py)",
+      "Bash(python:*)",
+      "Bash(python3 -c \"import pandas\")",
+      "Bash(pip3 show:*)",
+      "Bash(py:*)",
+      "Bash(conda info:*)"
+    ]
+  }
+}
